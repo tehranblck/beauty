@@ -51,9 +51,9 @@ export default function ServicesPage() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-20">
             {/* Hero Section - Basitleştirilmiş */}
-            <div className="relative h-[40vh] overflow-hidden">
+            <div className="relative h-[50vh] overflow-hidden">
                 <Image
-                    src="/services.jpg"
+                    src="/about.jpg"
                     alt="Hizmetlerimiz"
                     fill
                     priority
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                                         alt={service.title}
                                         fill
                                         sizes="(max-width: 768px) 100vw, 50vw"
-                                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                        className="object-cover hover:scale-105 hover:rotate-1 transition-transform duration-300"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                                     <div className="absolute bottom-0 left-0 p-4 sm:p-6">

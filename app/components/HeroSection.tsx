@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
                         >
                             Güzelliğinizi
                             <br />
-                            <span className="bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
+                            <span className=" text-transparent">
                                 Öne Çıkarın
                             </span>
                         </motion.h1>

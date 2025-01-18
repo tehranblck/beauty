@@ -249,7 +249,7 @@ const AboutPage = () => {
                             Güzellik yolculuğunuza bizimle başlayın
                         </p>
                         <motion.a
-                            href="https://wa.me/905551112233"
+                            href="https://wa.me/+905555555555"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}

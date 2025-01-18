@@ -14,7 +14,7 @@ const locations = [
     {
         name: 'Kadıköy Şubesi',
         address: 'Caferağa Mah. Moda Cad. No: 123, Kadıköy/İstanbul',
-        phone: '+90 555 111 2233',
+        phone: '+90 542 782 12 32',
         workingHours: 'Her gün 09:00 - 21:00',
         mainImage: '/salon1.jpg',
         gallery: ['/kad1.jpg', '/kad2.jpg', '/kad3.jpg', '/kad4.jpg'],

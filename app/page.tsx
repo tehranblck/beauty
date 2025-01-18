@@ -127,7 +127,7 @@ export default function Home() {
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-4 sm:mb-6">
                 Güzelliğinizi
-                <span className="gradient-text">
+                <span className="text-primary-500">
                   {' '}Öne Çıkarın
                 </span>
               </h1>
@@ -137,7 +137,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <motion.a
-                  href="https://wa.me/905551112233"
+                  href="https://wa.me/+905427821232"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition-colors hover-glow"
@@ -346,14 +346,14 @@ export default function Home() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/cta-bg.jpg"
+            src="/bg.jpg"
             alt="Background"
             fill
             sizes="100vw"
             className="object-cover"
             priority={false}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-500/90 to-secondary-500/90" />
+          <div className="absolute inset-0  bg-gradient-to-r from-primary-500/90 to-secondary-500/90 bg-opacity-20" />
         </div>
         <div className="relative container">
           <div className="max-w-3xl mx-auto text-center text-white">
@@ -364,7 +364,7 @@ export default function Home() {
               Size özel bakım ve güzellik hizmetlerimizle tanışmak için hemen randevu alın.
             </p>
             <motion.a
-              href="https://wa.me/905551112233"
+              href="https://wa.me/905427821232"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-500 font-semibold rounded-full hover:bg-gray-100 transition-colors hover-glow"

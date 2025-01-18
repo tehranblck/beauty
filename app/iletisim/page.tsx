@@ -30,8 +30,8 @@ const contactInfo = [
             </svg>
         ),
         title: 'Telefon',
-        content: '+90 555 111 2233',
-        link: 'tel:+905551112233'
+        content: '+90 542 782 12 32',
+        link: 'tel:+905427821232'
     },
     {
         icon: (
