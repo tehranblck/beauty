@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -34,23 +35,16 @@ const Header: React.FC = () => {
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/">
-                        <motion.span
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            className={`text-2xl font-serif font-bold tracking-wider ${isScrolled ? 'text-primary-500' : 'text-white'
-                                }`}
-                        >
-                            Beauty
-                            <span
-                                className={`${isScrolled
-                                    ? 'bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent'
-                                    : 'text-primary-300'
-                                    }`}
-                            >
-                                Salon
-                            </span>
-                        </motion.span>
+                    <Link href="/" className="relative flex items-center">
+                        <div className="relative w-[120px] h-[60px]">
+                            <Image
+                                src="/logo.svg"
+                                alt="Beauty Salon Logo"
+                                fill
+                                priority
+                                className="object-contain"
+                            />
+                        </div>
                     </Link>
 
                     {/* Desktop Menu */}

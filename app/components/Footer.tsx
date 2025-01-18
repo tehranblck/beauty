@@ -17,8 +17,8 @@ const footerLinks = {
     ],
     iletisim: {
         adres: 'Caferağa Mah. Moda Cad. No: 123, Kadıköy/İstanbul',
-        telefon: '+90 555 111 2233',
-        email: 'info@beautysalon.com',
+        telefon: '+90 542 782 12 32',
+        email: 'info@nurcanbeautysalon.com',
         calisma: 'Her gün 09:00 - 21:00'
     },
     sosyal: [
@@ -113,7 +113,7 @@ const Footer = () => {
                     <div className="py-6 sm:py-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
                         {/* Copyright */}
                         <div className="text-gray-500 text-sm">
-                            © {new Date().getFullYear()} BeautySalon. Tüm hakları saklıdır.
+                            © {new Date().getFullYear()} Nurcan Beauty Salon. Tüm hakları saklıdır.
                         </div>
 
                         {/* Social Links */}

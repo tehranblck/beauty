@@ -40,8 +40,8 @@ const contactInfo = [
             </svg>
         ),
         title: 'E-posta',
-        content: 'info@beautysalon.com',
-        link: 'mailto:info@beautysalon.com'
+        content: 'info@nurcanbeautysalon.com',
+        link: 'mailto:info@nurcanbeautysalon.com'
     },
     {
         icon: (

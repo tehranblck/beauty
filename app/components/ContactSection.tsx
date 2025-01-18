@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
                             <div className="space-y-4">
                                 <p>📍 Adres: İstanbul, Türkiye</p>
                                 <p>📞 Telefon: +90 (212) 555 55 55</p>
-                                <p>✉️ E-posta: info@beautysalon.com</p>
+                                <p>✉️ E-posta: info@nurcanbeautysalon.com</p>
                                 <div className="pt-4">
                                     <h4 className="text-xl mb-2">Çalışma Saatleri</h4>
                                     <p>Pazartesi - Cumartesi: 09:00 - 20:00</p>
