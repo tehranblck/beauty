@@ -70,7 +70,7 @@ const SalonsPage = () => {
             {/* Salons List */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="space-y-16 md:space-y-24">
-                    {locations.map((salon, index) => (
+                    {locations.map((salon) => (
                         <motion.div
                             key={salon.name}
                             initial={{ opacity: 0, y: 50 }}

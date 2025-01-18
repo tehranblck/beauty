@@ -124,8 +124,8 @@ export default function Home() {
                   {' '}Öne Çıkarın
                 </span>
               </h1>
-              <p className="text-xl text-gray-200 mb-8">
-                Profesyonel ekibimiz ve modern salonlarımızla size özel bakım deneyimi sunuyoruz.
+              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                2008&apos;den beri profesyonel güzellik ve bakım hizmetleri sunuyoruz. Deneyimli ekibimiz ve modern salonlarımızla hizmetinizdeyiz.
               </p>
               <div className="flex flex-wrap gap-4">
                 <motion.a

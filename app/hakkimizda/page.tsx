@@ -52,7 +52,7 @@ const AboutPage = () => {
                             Hakkımızda
                         </h1>
                         <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-                            2008'den beri güzellik ve bakım sektöründe profesyonel hizmet veriyoruz
+                            2008&apos;den beri profesyonel güzellik ve bakım hizmetleri sunuyoruz
                         </p>
                     </motion.div>
                 </div>
