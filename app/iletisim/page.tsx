@@ -182,7 +182,7 @@ export default function ContactPage() {
                         {/* Contact Info */}
                         <div className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {contactInfo.map((item, index) => (
+                                {contactInfo.map((item) => (
                                     <div
                                         key={item.title}
                                         className="bg-white p-6 rounded-xl shadow-sm"
