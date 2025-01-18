@@ -43,7 +43,7 @@ const Footer = () => {
                             </h3>
                         </Link>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            2008'den beri profesyonel güzellik ve bakım hizmetleri sunuyoruz. Deneyimli ekibimiz ve modern salonlarımızla hizmetinizdeyiz.
+                            2008&apos;den beri profesyonel güzellik ve bakım hizmetleri sunuyoruz. Deneyimli ekibimiz ve modern salonlarımızla hizmetinizdeyiz.
                         </p>
                     </div>
 
