@@ -4,12 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 248, 249, 250;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
 }
 
 /* Smooth Scrolling */
@@ -19,7 +15,7 @@ html {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -27,107 +23,118 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D4AF37;
-  border-radius: 5px;
+  background: theme('colors.primary.500');
+  border-radius: 4px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #AB8C2C;
+/* Optimized Hover Effects */
+@layer utilities {
+  .hover-scale {
+    @apply transition-transform duration-300 ease-out will-change-transform;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .hover-glow {
+    @apply transition-shadow duration-300 ease-out;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px theme('colors.primary.500/20');
+  }
+
+  .hover-opacity {
+    @apply transition-opacity duration-200 ease-out;
+  }
+
+  .hover-opacity:hover {
+    opacity: 0.9;
+  }
 }
 
-/* Button Hover Effects */
-.hover-effect {
-  @apply transition-all duration-300 ease-in-out;
+/* Performance Optimized Animations */
+@layer components {
+  .animate-fade-up {
+    animation: fadeUp 0.5s ease-out forwards;
+    will-change: transform, opacity;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+    will-change: opacity;
+  }
+
+  .animate-scale {
+    animation: scale 0.5s ease-out forwards;
+    will-change: transform;
+  }
 }
 
-/* Custom Selection Color */
-::selection {
-  background: #D4AF37;
-  color: white;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Image Hover Effects */
-.image-hover {
-  @apply transition-transform duration-300 ease-in-out hover:scale-105;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-/* Custom Container Padding */
-.section-padding {
-  @apply py-16 md:py-24;
+@keyframes scale {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Container Padding */
+.container {
+  @apply px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl;
 }
 
 /* Custom Shadow */
-.custom-shadow {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+.shadow-custom {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Gradient Text */
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500;
+  @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
 }
 
 /* Custom Input Focus */
-.custom-input:focus {
-  @apply ring-2 ring-primary-500 ring-opacity-50 outline-none;
+.input-focus {
+  @apply focus:ring-2 focus:ring-primary-500 focus:border-primary-500 focus:outline-none;
 }
 
-/* Custom Card Hover */
-.custom-card {
-  @apply transition-all duration-300 hover:shadow-hover;
-}
-
-/* Hero Section Animations */
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes float-delay {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
-.animate-scale {
-  animation: scale 20s infinite alternate;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delay {
-  animation: float-delay 7s ease-in-out infinite;
-}
-
-/* Glass Effect */
-.glass-effect {
-  @apply backdrop-blur-md bg-white/10 border border-white/20;
+/* Card Hover Effect */
+.card-hover {
+  @apply transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1;
+  will-change: transform, box-shadow;
 }
